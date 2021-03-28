@@ -29,4 +29,26 @@ export const useStyles = makeStyles((theme) => ({
   title: {
     marginTop: '40px',
   },
+  input: {
+    margin: '10px 0 0',
+    display: 'block',
+    width: '300px',
+  },
+  previewImage: {
+    display: 'block',
+    height: '300px',
+    margin: '10px 0',
+    backgroundSize: 'contain',
+  },
+  formCard: {
+    maxWidth: '340px',
+  },
+  mainContainer: {
+    padding: '20px 0',
+  },
+  formControl: {
+    margin: theme.spacing(1),
+    minWidth: 150,
+  },
+  filterInput: {},
 }));

@@ -13,8 +13,9 @@ import { Nav } from '../../components/nav';
 import { rootReducer } from '../../reducers';
 import { useStyles } from '../../theme';
 import { Home } from '../home';
+import { NewCat } from '../new-cat';
 
-const store = createStore(rootReducer);
+export const store = createStore(rootReducer);
 
 export const App: any = () => {
   const classes = useStyles();
@@ -22,7 +23,7 @@ export const App: any = () => {
     <div className='App'>
       <Provider store={store}>
         <Router>
-          <Box color='text.primary'>
+          <Box className={classes.mainContainer} color='text.primary'>
             <Container maxWidth='md'>
               <Typography className={classes.title} component='h1' variant='h4'>
                 Cat Database
@@ -30,6 +31,7 @@ export const App: any = () => {
               <Nav />
               <Switch>
                 <Route exact path='/' component={Home} />
+                <Route exact path='/add' component={NewCat} />
                 <Route render={() => <Redirect to='/' />} />
               </Switch>
             </Container>

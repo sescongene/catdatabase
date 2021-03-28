@@ -112,6 +112,7 @@
             40
         ],
         "sonarjs/no-duplicate-string": "off",
-        "@typescript-eslint/consistent-type-assertions": "off"
+        "@typescript-eslint/consistent-type-assertions": "off",
+        "no-undef": "off"
     }
 }

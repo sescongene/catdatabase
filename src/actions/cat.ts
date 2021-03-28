@@ -5,17 +5,10 @@ export const fetchCatsAction: any = (data: any) => {
   };
 };
 
-export const appendCatsAction: any = (data: any) => {
+export const filterCatsAction: any = (data: any) => {
   return {
-    type: 'APPEND_CATS',
+    type: 'FILTER_CATS',
     data: data,
-  };
-};
-
-export const clearCatsAction: any = () => {
-  return {
-    type: 'CLEAR_CATS',
-    data: [],
   };
 };
 
